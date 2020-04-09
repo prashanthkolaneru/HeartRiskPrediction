@@ -3,8 +3,8 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 import pandas as pd
-from sklearn.preprocessing import OneHotEncoder
-one = OneHotEncoder(sparse=False,handle_unknown='ignore')
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
 #Step -2 Flask constructor takes the name of  
 # current module (__name__) as argument.app = Flask(__name__)
 
